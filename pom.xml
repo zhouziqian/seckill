@@ -143,19 +143,18 @@
             <artifactId>junit</artifactId>
             <version>4.12</version>
         </dependency>
+        <!--prostuff序列化依赖-->
+        <dependency>
+            <groupId>com.dyuproject.protostuff</groupId>
+            <artifactId>protostuff-core</artifactId>
+            <version>1.1.2</version>
+        </dependency>
+        <dependency>
+            <groupId>com.dyuproject.protostuff</groupId>
+            <artifactId>protostuff-runtime</artifactId>
+            <version>1.1.2</version>
+        </dependency>
 
-        <!--prostuff序列化依赖
-        <dependency>
-            <groupId>com.dyuproject.protostuff</groupId>
-            <artifactId>protosuff-core</artifactId>
-            <version>1.1.1</version>
-        </dependency>
-        <dependency>
-            <groupId>com.dyuproject.protostuff</groupId>
-            <artifactId>protosuff-runtime</artifactId>
-            <version>1.1.1</version>
-        </dependency>
-        -->
     </dependencies>
     <build>
         <finalName>seckill</finalName>
