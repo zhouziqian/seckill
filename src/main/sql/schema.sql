@@ -31,8 +31,8 @@ VALUES
 --用户登陆认证信息简化为手机号码
 CREATE TABLE success_killed(
     `seckill_id` BIGINT NOT NULL COMMENT '商品ID',
-    `user_phone` VARCHAR(20) NOT NULL COMMENT '用户手机号码'
-    `state` TINYINT NOT NULL DEFAULT -1 COMMENT,
+    `user_phone` VARCHAR(20) NOT NULL COMMENT '用户手机号码',
+    `state` TINYINT NOT NULL DEFAULT -1 COMMENT '状态标识:-1:无效 0:成功 1:已付款 2:已发货',
     `create_time` TIMESTAMP NOT NULL COMMENT '创建时间',
     PRIMARY KEY (seckill_id,user_phone),/*联合组建*/
     key idx_create_time(create_time)
